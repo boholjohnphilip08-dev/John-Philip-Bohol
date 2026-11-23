@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Presentation & Defense Guide — John Philip Bohol</title>
+  <style>
+    :root {
+      --bg: #0f1117;
+      --card-bg: #1a1d27;
+      --border: #2d3142;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #10b981;
+      --accent-dim: rgba(16, 185, 129, 0.15);
+      --code-bg: #11131a;
+      --code-border: #2b3040;
+    }
+    @media print {
+      :root {
+        --bg: #ffffff;
+        --card-bg: #f8fafc;
+        --border: #cbd5e1;
+        --text: #0f172a;
+        --text-muted: #475569;
+        --accent: #047857;
+        --code-bg: #f1f5f9;
+        --code-border: #e2e8f0;
+      }
+      body { padding: 0 !important; }
+      .no-print { display: none !important; }
+      .card { page-break-inside: avoid; }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2.5rem 1.5rem;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .meta {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+    .print-btn {
+      float: right;
+      background: var(--accent);
+      color: #000;
+      font-weight: 600;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.95rem;
+    }
+    .print-btn:hover { opacity: 0.9; }
+    h2 {
+      font-size: 1.4rem;
+      margin: 2rem 0 1rem;
+      color: var(--accent);
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+    }
+    h3 {
+      font-size: 1.15rem;
+      margin: 1.25rem 0 0.5rem;
+      color: var(--text);
+    }
+    p, ul, ol {
+      margin-bottom: 1rem;
+    }
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.35rem;
+    }
+    blockquote {
+      background: var(--accent-dim);
+      border-left: 4px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin: 1rem 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    code {
+      font-family: Consolas, Monaco, "Courier New", monospace;
+      background: var(--code-bg);
+      border: 1px solid var(--code-border);
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+      color: #38bdf8;
+    }
+    pre code {
+      display: block;
+      padding: 1rem;
+      overflow-x: auto;
+      line-height: 1.45;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.25rem 0;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+    th {
+      background: var(--card-bg);
+      color: var(--accent);
+      font-weight: 600;
+    }
+    tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.02);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <button class="print-btn no-print" onclick="window.print()">🖨️ Print / Save as PDF</button>
+      <h1>Portfolio Presentation & Defense Guide</h1>
+      <p class="meta"><strong>Student:</strong> John Philip Bohol &nbsp;|&nbsp; <strong>Focus:</strong> Web Development & UI/UX Design</p>
+    </header>
+
+    <h2>1. The 1-Minute Elevator Pitch</h2>
+    <blockquote>
+      "Good day, Sir/Ma'am! This is my personal portfolio website, designed to showcase my identity, skills, and projects as an aspiring Web Designer and Full-Stack Developer.<br><br>
+      Architecturally, it is built with <strong>zero external dependencies</strong> using pure semantic <strong>HTML5, modern CSS3, and Vanilla JavaScript (ES6+)</strong>. It follows a clean <strong>Separation of Concerns</strong> where all content is decoupled into a dedicated data store (<code>js/data.js</code>), allowing instant updates without modifying HTML templates. It is fully responsive, accessible, supports persistent Dark and Light themes, and highlights my capstone work like <strong>NUMIFY</strong>—my Django and PostgreSQL numeracy assessment platform."
+    </blockquote>
+
+    <h2>2. Step-by-Step Presentation Script (3–5 Minutes)</h2>
+    <div class="card">
+      <h3>Step 1: Introduction & Philosophy</h3>
+      <p>"The goal was to create a fast, accessible, and high-performance showcase. Instead of heavy libraries like React or Bootstrap, I chose <strong>pure vanilla web standards</strong> to ensure instant load times and show my mastery over core web fundamentals."</p>
+
+      <h3>Step 2: Architecture & Structure</h3>
+      <ul>
+        <li><strong>Content Layer (<code>js/data.js</code>):</strong> Stores all projects, highlights, skills, and awards as a single source of truth.</li>
+        <li><strong>Interaction Layer (<code>js/main.js</code>):</strong> Dynamically renders DOM elements, manages event delegation, and handles user actions.</li>
+        <li><strong>Styling Layer (<code>css/styles.css</code>):</strong> Leverages CSS Variables (Custom Properties) for instantaneous Dark/Light theme switching.</li>
+      </ul>
+
+      <h3>Step 3: Interactive Features Walkthrough (Screen Demo)</h3>
+      <ol>
+        <li><strong>Hero Section:</strong> Dynamic role typing effect and greeting based on local time.</li>
+        <li><strong>Projects & Accessible Modals:</strong> Featured project showcase (<strong>NUMIFY</strong>). Clicking 'View Project' opens a keyboard-accessible modal with specifications and live links.</li>
+        <li><strong>Filtering:</strong> Filter projects by Web or Academic with smooth layout reflow transitions.</li>
+        <li><strong>Skills & Awards:</strong> Interactive SVG logos with brand hover glows and a certificate lightbox viewer.</li>
+        <li><strong>Theme Toggling:</strong> Instant light/dark switch persisted via <code>localStorage</code>.</li>
+      </ol>
+    </div>
+
+    <h2>3. Project Directory & Component Roles</h2>
+    <table>
+      <thead>
+        <tr><th>File / Folder</th><th>Category</th><th>Role & Description</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>index.html</code></td><td>Structure</td><td>Main entry point, semantic landmarks, modal dialog templates, and anti-flicker script.</td></tr>
+        <tr><td><code>css/styles.css</code></td><td>Styling</td><td>Tokens for dark/light themes, CSS Grid, Flexbox, and 3D transforms.</td></tr>
+        <tr><td><code>js/data.js</code></td><td>Data Model</td><td>Decoupled content data store (<code>window.PORTFOLIO</code>) for easy maintenance.</td></tr>
+        <tr><td><code>js/main.js</code></td><td>Logic Engine</td><td>Dynamic DOM rendering, event delegation, lerp cursor math, modal focus trapping.</td></tr>
+        <tr><td><code>assets/img/</code></td><td>Media</td><td>WebP compressed images for NUMIFY/StockGuard and crisp vector SVGs for tech logos.</td></tr>
+        <tr><td><code>assets/</code></td><td>Documents</td><td>Contains resume PDF (<code>John-Philip-Bohol-Resume.pdf</code>) and tab favicon.</td></tr>
+      </tbody>
+    </table>
+
+    <h2>4. Tools & Technologies Used</h2>
+    <div class="card">
+      <p><strong>Are there difficult tools or frameworks?</strong> <u>No.</u> There are zero npm dependencies, no Node.js runtime required, and no build tools.</p>
+      <ul>
+        <li><strong>Core Languages:</strong> Semantic HTML5, CSS3 Variables & Flex/Grid, Vanilla JavaScript (ES6+).</li>
+        <li><strong>Native Browser APIs:</strong> <code>localStorage</code> (theme memory), <code>IntersectionObserver</code> (scroll reveal), <code>requestAnimationFrame</code> (60 FPS smooth animations), <code>navigator.clipboard</code> (copy email), <code>window.matchMedia</code> (reduced motion accessibility).</li>
+        <li><strong>Formats:</strong> SVG for vector crispness, WebP for fast image loading.</li>
+        <li><strong>Server Tool:</strong> Python 3's built-in <code>http.server</code> for local hosting.</li>
+      </ul>
+    </div>
+
+    <h2>5. Code-Level Defense (If Your Teacher Inspects Code)</h2>
+    <div class="card">
+      <h3>1. IIFE & Scope Isolation (Line 5)</h3>
+      <p>Wraps code in an Immediately Invoked Function Expression (<code>(function () { "use strict"; ... })()</code>) to prevent polluting the global namespace.</p>
+
+      <h3>2. XSS Sanitization (Line 16)</h3>
+      <p>Uses a custom <code>esc()</code> sanitizer replacing <code>&lt; &gt; &quot; &#39; &amp;</code> to prevent Cross-Site Scripting when injecting HTML.</p>
+
+      <h3>3. Event Delegation (Line 175)</h3>
+      <p>Uses <code>wrap.addEventListener("click", e => e.target.closest(...))</code>. Instead of hundreds of listeners, a single parent listener handles all clicks efficiently.</p>
+
+      <h3>4. Smooth Physics (Lerp Math) (Line 615)</h3>
+      <p>Uses Linear Interpolation <code>rx += (x - rx) * 0.18</code> to give the cursor ring an elastic, natural follow effect with GPU-accelerated <code>translate3d</code>.</p>
+
+      <h3>5. Accessibility & Focus Trapping (Line 388)</h3>
+      <p>When a modal closes, <code>lastOpener.focus()</code> returns keyboard focus to the exact button that opened it, complying with WCAG accessibility standards.</p>
+    </div>
+
+    <h2>6. Teacher Q&A Cheatsheet</h2>
+    <table>
+      <thead>
+        <tr><th>Question</th><th>What to Answer</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>"Why Vanilla JS instead of React or Vue?"</strong></td>
+          <td>"A portfolio is a content-driven showcase. Vanilla JS provides near-instant load times, zero build steps, and demonstrates mastery of core browser APIs rather than relying on framework abstractions."</td>
+        </tr>
+        <tr>
+          <td><strong>"How do you add a new project?"</strong></td>
+          <td>"I just add an object into <code>js/data.js</code>. The rendering engine in <code>js/main.js</code> automatically builds the card, hooks up filters, and sets up modal dialogs."</td>
+        </tr>
+        <tr>
+          <td><strong>"How does the theme avoid flickering on reload?"</strong></td>
+          <td>"An inline script in the <code>&lt;head&gt;</code> of <code>index.html</code> checks <code>localStorage</code> before first paint and immediately applies <code>data-theme='light'</code>."</td>
+        </tr>
+        <tr>
+          <td><strong>"Did you build this from scratch?"</strong></td>
+          <td>"I used a modern portfolio architecture as my foundation, studied the code patterns, customized the design and behavior, and integrated my real projects like NUMIFY (Django/PostgreSQL) and StockGuard."</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

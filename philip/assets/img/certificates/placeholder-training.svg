@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Certificate placeholder">
+  <rect width="800" height="600" fill="#f4f2ec"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#1b1c21" stroke-width="2"/>
+  <rect x="36" y="36" width="728" height="528" fill="none" stroke="#ffd28a" stroke-width="6"/>
+  <text x="400" y="140" text-anchor="middle" font-family="Georgia, serif" font-size="20" letter-spacing="8" fill="#55575e">TRAINING &amp; WEBINAR</text>
+  <text x="400" y="200" text-anchor="middle" font-family="Georgia, serif" font-size="44" fill="#1b1c21">Certificate of Participation</text>
+  <text x="400" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#7d7f87">is presented to</text>
+  <text x="400" y="310" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="38" fill="#1b1c21">Your Name</text>
+  <line x1="220" y1="330" x2="580" y2="330" stroke="#c4c2bb" stroke-width="1.5"/>
+  <rect x="250" y="360" width="300" height="10" rx="5" fill="#dedbd3"/>
+  <rect x="290" y="382" width="220" height="10" rx="5" fill="#dedbd3"/>
+  <line x1="140" y1="490" x2="320" y2="490" stroke="#1b1c21"/>
+  <line x1="480" y1="490" x2="660" y2="490" stroke="#1b1c21"/>
+  <text x="230" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#7d7f87">Signature</text>
+  <text x="570" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#7d7f87">Date</text>
+  <circle cx="400" cy="470" r="38" fill="#ffd28a"/>
+  <circle cx="400" cy="470" r="28" fill="none" stroke="#1b1c21" stroke-opacity=".35" stroke-dasharray="3 4"/>
+  <text x="400" y="477" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#1b1c21">★</text>
+  <text x="400" y="570" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" letter-spacing="3" fill="#a3a199">PLACEHOLDER — REPLACE WITH YOUR CERTIFICATE</text>
+</svg>
